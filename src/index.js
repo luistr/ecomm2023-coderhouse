@@ -1,17 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import React, { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAt_oA1_xDRV9-LcEiMEmzqrljnCIoU0vQ",
+  authDomain: "ecomm-c6351.firebaseapp.com",
+  projectId: "ecomm-c6351",
+  storageBucket: "ecomm-c6351.appspot.com",
+  messagingSenderId: "284027662899",
+  appId: "1:284027662899:web:e6288be645e0f93ca5e946"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

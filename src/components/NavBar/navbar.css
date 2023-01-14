@@ -1,0 +1,23 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  background-color: beige;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+h1 img{
+  width: 60px;
+}
+
+.nav {
+  display: inline-flex;
+}
+
+li {
+  padding: 0.5em 0.5em;
+  list-style: none;
+}

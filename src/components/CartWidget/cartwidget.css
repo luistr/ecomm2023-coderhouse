@@ -1,0 +1,7 @@
+.carrito {
+  display: flex;
+  font-size: 1.5rem;
+ }
+.carrito img{
+ width: 40px;
+}
